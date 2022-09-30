@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var portuguesChegaram = 1500;
+    var anoDeHoje = 2022;
+    var quantasGeracoes = (anoDeHoje - portuguesChegaram) / 28;
+
+    mostra("Desde 1500 até o ano atual, se passaram "
+     + Math.round(quantasGeracoes) + " gerações.");
+
+</script>
