@@ -57,7 +57,7 @@ Você vai aprender os fundamentos básicos do mundo dos negócios para transform
 </a>
 
 
-Criado por Wesley Alexandre :wave::wave: Contact!🚀
+Criado por Wesley Alexandre :wave::wave: Contact!🚀<br>
 <a href="https://www.linkedin.com/in/wesley-alexandre-393044240/">
   <img alt="Linkedin" src="https://img.shields.io/badge/-Wesley%20Alexandre-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
 </a>
