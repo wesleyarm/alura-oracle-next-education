@@ -19,7 +19,7 @@
   </a>
 </h1>
 <h1 align="center">
-<img src="img/vd03-next-education.jpg" />
+<img src="img/vd03-next-education1.jpg" />
 </h1>
 <p align="center">
   <a href="#page_facing_up-descrição">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
