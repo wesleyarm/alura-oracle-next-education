@@ -46,12 +46,10 @@ Ajuda a construir experiências fantásticas na web, se aprofundando nas linguag
 ## :clipboard: Java
 Usado para criar aplicativos para computadores, smartphones, tablets e até videogames, o Java é uma das principais linguagens de programação do mundo.
 
-
 ## :closed_book: Empreendedorismo
 Você vai aprender os fundamentos básicos do mundo dos negócios para transformar seus conhecimentos e aprender habilidades essenciais para uma carreira de sucesso.
 
 ## :man: Autor
-
 <a href="https://github.com/wesleyarm">
  <img src="https://avatars.githubusercontent.com/u/103395674?v=4" width="70px;" alt=""/>
  <br />
@@ -60,12 +58,9 @@ Você vai aprender os fundamentos básicos do mundo dos negócios para transform
 
 
 Criado por Wesley Alexandre :wave::wave: Contact!🚀
-
 <a href="https://www.linkedin.com/in/wesley-alexandre-393044240/">
   <img alt="Linkedin" src="https://img.shields.io/badge/-Wesley%20Alexandre-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
 </a>
 
-
 ## :memo: Licença
-
 Copyright © 2022 [Wesley Alexandre](https://github.com/wesleyarm).<br />
