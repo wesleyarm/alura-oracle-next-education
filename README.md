@@ -18,7 +18,9 @@
     <img alt="GitHub stars" src="https://img.shields.io/github/stars/nagatingg/nlw05_plantmanager?color=29B6D1&style=flat-square">
   </a>
 </h1>
-<img align="center" src="img/vd03-next-education.jpg" />
+<h1 align="center">
+<img src="img/vd03-next-education.jpg" />
+</h1>
 <p align="center">
   <a href="#page_facing_up-descrição">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#art-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
