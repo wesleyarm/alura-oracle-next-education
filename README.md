@@ -40,7 +40,7 @@ A página oficial do programa pode ser vista <a href="https://www.alura.com.br/o
 ## :art: Lógica de Programação
 É o primeiro passo para aprender a programar. Essa trilha tem o objetivo de abrir a cabeça do estudante para a lógica e o mercado de desenvolvimento de software.
 
-## 🛠 Front-end
+## :#: Front-end
 Ajuda a construir experiências fantásticas na web, se aprofundando nas linguagens <b>HTML, CSS e JavaScript</b>.
 
 ## :clipboard: Java
@@ -48,8 +48,6 @@ Usado para criar aplicativos para computadores, smartphones, tablets e até vide
 
 
 ## :closed_book: Empreendedorismo
-
-### Prerequisites
 Você vai aprender os fundamentos básicos do mundo dos negócios para transformar seus conhecimentos e aprender habilidades essenciais para uma carreira de sucesso.
 
 ## :man: Autor
