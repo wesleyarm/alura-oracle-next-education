@@ -36,6 +36,7 @@ Front-end</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 A ONE (Oracle Next Education) em parceria com a Alura, é um projeto de qualificação na área de empreendedorismo e programação.
 Em parceria com a Alura o objetivo do projeto é ensinar o básico de programação aos estudantes.
 A página oficial do programa pode ser vista <a href="https://www.alura.com.br/oracle-next-education">aqui<a>.
+Nesse repositório será guardado os conteúdos dos quais eu irei aprender no decorrer do curso.
 
 ## :art: Lógica de Programação
 É o primeiro passo para aprender a programar. Essa trilha tem o objetivo de abrir a cabeça do estudante para a lógica e o mercado de desenvolvimento de software.
