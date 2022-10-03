@@ -1,8 +1,21 @@
 <meta charset="UTF-8">
 <script>
-    alert("Isso");
-    alert("é");
-    alert("um");
-    alert("programa");
-    alert("sim");
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    var anobase = 1500
+    var anoAtual = 2022
+    var diferencaAnoBaseeAtual = anoAtual - anobase
+
+    mostra("Se passaram desde 1500: " + Math.round((diferencaAnoBaseeAtual / 28)) + "gerações.");
+
+
+
+
 </script>
