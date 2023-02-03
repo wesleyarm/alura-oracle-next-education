@@ -1,7 +1,7 @@
 body {
 }
 
-.title-principal {
+.title_principal {
     margin-left: 20px;
 
 
@@ -18,7 +18,7 @@ body {
     padding: 30px;
 }
 
-.title-center {
+.title_center {
     text-align: center;
     
 }
@@ -52,6 +52,6 @@ ul {
     margin-right: 20%
 }
 
-.beneficios {
-    width: 30%;
+.beneficios_imagem {
+    width: 50%;
 }
