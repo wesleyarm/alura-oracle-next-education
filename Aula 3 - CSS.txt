@@ -1,0 +1,280 @@
+CSS é uma linguagem style sheet
+
+Comentário no CSS /*  ---  */
+
+
+CSS é uma linguagem style sheet
+
+Comentário no CSS /*  ---  */
+
+Seletor conecta um elemento HTML com o CSS
+seletor é a tag, exemplo: h1
+
+Global selector *
+Element/Type Selector h1,h2 p, div
+ID selector #box, #container
+Class Selector .red, .m-4
+Attribute selector, pseudo-class, pseudo-ement e outros
+---
+
+properties é color, font-size, backgroynd, etc
+
+
+property value, é o valor que entra em properties
+
+No fundo, html são todas caixas, com diferentes tamanhos, cores, etc
+
+---
+Cascata - Lido de cima para baixo
+-Origem do estilo
+inline > tag style > tag link
+
+-Especificidade
+0 seletor universal: * {
+		color: red;
+             }
+
+10. seletor de atributos
+no html: class="title"
+no css: .title
+
+100. seletor id
+no html: id="title"
+no css: #title
+
+1000. inline
+
+
+!important > nao usar
+
+---- exemplo
+h1 {
+  color: blue !important;
+   }
+
+
+-----
+aT-RULES
+
+Começa com sinal de @
+-@import url("http://local.com/style.css");
+/* incluir um CSS externo */
+
+-@media    
+/* regras condicionais para dispositivos */
+
+-@font-face    
+/* fontes externas */
+
+-@keyframes    
+/* Animation */
+
+----
+
+Shorthand
+* Junção de propriedades
+* resumido
+* legível
+
+/* font properties */
+font-style: italic;
+font-weight: bold;
+font-size: .8em;
+line-height: 1.2;
+font-family: Arial, sans-serif;
+
+/* font shorthand */
+font: italic bold .em/1.2 Arial, sans-serif;
+
+#Detalhes
+
+* não irá considerar propriedades anteriores
+* valores não especificados irão assumir o valor padrão
+* geralmente, a ordem descrita não importa, mas se houver muitas propriedades com valores semelhantes, poderemos encontrar problemas
+
+#Propriedades que aceitam shorthand
+animation, background, border, border-bottom, border-color, border-left, border-radius, border-right, border-style, border-top, border-width, column-rule, columns, flex, flex-flow, font, grid, grid-area, grid-column, grid-row, grid-template, list-style, margin, offset, outline, overflow, padding, place-content, place-itemns, place-self, text-decoration, transition 
+
+shorthand_properties
+
+-----
+
+#funções
+
+* nome seguido de abre e fecha parentesis
+* recebe argumentos - valores
+
+exemplos
+css
+@import url("http:google.com/style.css");
+
+{
+	color: rgb(255, 0, 100);
+	width: calc(100% - 10px);
+}
+
+------
+
+#Devtools
+
+Sempre aplicado de baixo para cima
+
+
+-------
+
+#Vendor Prefixes
+Permite que browsers adicione [features] a fim de colocar em uso alguma novidade que vemos no CSS
+
+Consulta
+ireade.github.io/which-vendor-prefix
+caniuse.com
+
+#Valores e unidades de medida
+* cada propriedade possui valores 'property: value'
+* estudo constante a fim de entender as propriedades e seus valores
+
+#Prática
+* como conhecer e estudar os valores na documentação?
+* <color> <length>
+* os termos podem variar, 'values' ou 'data types'
+
+----
+#Tipos númericos
+* <integer> Número inteiro como -10 ou 223
+* <number> Número decimal como -2.4, 64 ou 0.234
+* <dimension> É um <number> com uma unidade junto: 90deg, 2s, 8px
+* <percentagem> Representa a fração de outro número: 50%
+
+#Unidades comuns
+* <length> Representa um valor de distância: px, em, vw
+* <angle> Representa um ângulo: deg(graus), rad, turn(giro completo)
+* <time> Representa um tempo: s, ms
+* <resolution> Representa resoluções para dispositivos: dpi
+
+----
+
+Procurar no MDM
+
+----
+
+#Distâncias absolutas <length>
+São fixas e não alteram o seu valor.
+
+Unidade: px, in, cm
+
+* o mais comum e mais utilizado é  o **px**
+* não recomendado usar cm
+
+
+#Distancia relativas
+São relativas a algum outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.
+
+
+*Benefício: maior adaptação aos diferentes tipos de tela
+
+Unidade: em, rem, vw, vh
+
+
+Exemplo elemento root: 
+1.6rem
+
+
+----
+
+#Porcentagens
+*Em muitos casos é tratado da mesma maneira que as distâncias <length>
+*Sempre será relativo a algum valor
+
+----
+
+Posições
+<position>
+Representa um conjunto de coordenadas 2D:
+-top, rigth, bottom, left e center
+
+*Usado para alguns tipos de propriedades
+*Não confundir com a propriedade 'position'
+
+< > sempre significa valor
+
+---
+
+#Funções
+Em programação, funções são reconhecidas por causar um reaproveitamento de código.
+
+
+* rgb(argumento)
+*hsl()
+*url()  --- url(http://source.unsplash.com/random);
+*calc() ---- height: calc(100% - 40px);
+
+body não tem uma altura estabelecida
+
+----
+
+#Strings e identificadores
+
+*Strings: Texto envolto em aspas
+*Identificadores: red, black, gold;
+exemplo:
+.box::after {
+	content: "Aqui vem alguma mensagem";
+	color: white;
+}
+
+#Box Model
+- Fundamental para fazer layouts para a web
+- Maior facilidade para aplicar o CSS
+
+#O que é?
+Uma caixa retangular.
+Essa caixa possui propriedades de uma caixa (2D)
+-Tamanho    		--- (largura[width] x [height]altura )
+-Conteúdo   		--- content
+-Bordas     		--- border
+-Preenchimento interno  --- padding
+-Espaços fora da caixa  --- margin
+
+*Cada elemento na sua página, será considerado uma caixa*
+
+#Box-sizing
+
+Como será calculado o tamanho total da caixa?
+-content-box|border-box
+
+css
+div {
+	box-sizing: border-box;
+}
+
+----
+
+#display: block vs display: inline
+- como as caixas se comportam em relação ás outras caixas
+- comportamento externo das caixas
+
+
+**block**
+Ocupa toda a linha, colocando o prõximo elemento abaixo desse
+Width e height são respeitados
+padding, margin, border irão funcionar normalmente.
+
+**inline**
+Elemento ao lado do outro
+width e height não funcionam
+somente valores horizontais de margin, padding e border
+
+Exemplos,
+block: <p> <div> <section>, todos os headdings <h1> <h2>...
+inline <a> <strong> <span> <em>
+
+
+
+
+
+
+
+
+
+
+

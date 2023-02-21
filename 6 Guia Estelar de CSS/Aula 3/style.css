@@ -1,0 +1,14 @@
+@import ""
+
+h1 {
+    color: blue;
+}
+
+strong {
+    color: red;
+}
+
+p {
+    margin: 0 auto;
+    padding-left: 15px;
+}

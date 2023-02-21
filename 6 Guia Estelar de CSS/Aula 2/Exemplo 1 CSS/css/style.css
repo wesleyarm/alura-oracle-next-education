@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+h1, h2 {
+  color: blue;
+  font-size: bold;
+  background: orange;
+}
+
+#container {
+  width: 200px;
+}
+
+
+
+.m-40 {
+  margin: 40px;
+}

@@ -1,0 +1,275 @@
+Web - Rede - TI
+
+Programar - Entender de Algoritmos - Passo a passo, sequencia logica
+--- Logica de Programação - Construção do Algoritmo, aplicação dos passos
+
+Computador - Processa e calculo, recebe ordens, você precisa entender - Linguagbem de Programação
+
+Dar instruções - Rceita de bolo, dados, manipulação de dados, exemplos
+String   = sequencia de caracteres
+numerico = quantidade
+boleano  = verdade ou falso
+
+- Fazer um café
+Dados = Café, fogo, cafeteira, energia
+Manipular dados = Colocar o cafe na cafeteira, ligar a cafeteira
+
+Objetivo = Resolver problemas ( Entender o problema, não dá para seguir, se não entender o problema )
+
+- Como funciona entrar em um site
+HTTP ( Protocolo, trocar mensagens pequenos pacotes )
+URL ( Localizar e idenficador de um recurso, site no caso )
+
+TCP ( Cliente { você } em contato com o servidor { computador configurado para receber e enviar o pedido )
+tcp = conjunto de regras para garantir que pacotes cheguem ao destino
+
+DNS = conversor de IP
+IP = endereço dos computadores real
+DNS = Dominio , converter dominio para um ip
+Proxy = diversos dispositivos no caminho do cliente e servidor ( roteador, modem ), para encaminha os pacotes
+
+Internet = redes interligadas no mundo todo
+Rede de Computadores e Comunicação = Conexão de dispositivos para permitir transmissão ( A comunicação é feita atraves de protocolos { conjunto de regras })
+IP = é um número dado ao seu computador pelo provedor de internet ( número pode mudar )
+MAC Adress número de série de identificador gravado no dispositivo de rede ( número nunca muda )
+--- IP é sempre compartilhado pela internet, compartilhando informações como localização, acesso, etc --
+
+Servidores = Computador equipado ( hospedagem de sites, provedor de emails, etc )
+
+HTTP =  É um protocolo de transferencia de dados ( Hypertext Transfer Protocol - Secure {quando tem o HTTPS} )
+
+Seu pedido chega até o servidor.
+Servidor analisa seu pedido e te dá uma resposta, neste caso, positiva
+O caminho de volta é semelhante ao de ida, passando pela linha de comunicação que foi criada
+O browser recebe os pedaços e monta a tela do site pra você
+Esse processo acontece muitas vezes, pois para cada recurso (html, css, javascript, imagem... ) é feita uma nova conexão
+
+Hardware = componentes
+Perifericos = Acessorios que enviam e recebem informações
+Software = tudo que instala no computador e faz o contato com os perifericos que fazem interações
+Firmware = mais ou menos que um software, que armaneza todas as funções para que os componentes funcionem corretamente, seja atraves de um chip de memoria de hardware
+Drivers = programas ( mais ou menos que um software ) que a funções é conectar o sistema operacional com o componente eletronico
+- exemplo: todos os drivers do adptador de rede, webcam, etc e mais em ( gerenciamento do computador )
+Sistema Operacional = Windows, Linux e Mac -- Mobile: Android, IOS
+- Controle todos os componentes do computador e todo o funcionado dos hardwares
+
+Software = Programa de Computador
+Program = Programa de Computador ou aplicativo
+Exemplo de programa: Discord, Google Chrome, Whats, etc
+
+Memoria Ram = Memoria Temporária que retem informações enquanto são necessarias
+- Quando salva transfere da memoria ram para o HD ou SSD
+
+HD e SSD = Armazena dados
+
+Processador = Cerebro do Computador
+linguagem que o computador entender = 01010101
+Processador pega uma informação e transforma em uma linguagem para o computador entender
+Exemplo? carregar paginas, fazer downloads, etc
+Quanto mais rápido processador = mais rapido carrega as tarefas
+
+Grupos de Sistemas Operacionais
+Unix = Linux, OS X, Android, iOS
+Windows = Windows 7, 10, 11
+
+Tipos de Interface do usuario
+GUI - Graphical User Interface = Interface gráfica, elementos gráficos ( Cursor do mouse ou touch, área de trabalho, arquivos e pastas )
+CLI - Command-line Interface = Linha de comando ( Criar arquivos e pastas, por exemplo, gerenciar o sistema operacional
+
+Módulos 
+
+Kernal = componente central do Sistema Operacional
+Primeiro módulo a ser iniciado
+Permance executando enquanto S.O estiver ligado
+( Gerenciamento da memoria, processos, armazenamento e dispositivos )
+
+Gerenciador de Processos
+Agendamento de processos, qual processo está sendo executado agora
+Thread = A divisao de um processo para melhor performance - 
+Multitarefa = Troca muito rapida de tarefas, mas elas nao sao executadas ao mesmo tempo
+
+Gerenciador de Arquivos
+File System - Organização e arzenamento dos arquivos = Vídeos, imagens e documentos
+Tipos de sistemas de arquivos
+WINDOWS - FAT, NTFS
+LINUX - ext3, ext4
+MAC - HFS+, APFS
+
+Ferramentas de gerenciamento
+Tarefas ( gerenciador de tarefas ( task manager )
+Pacotes ( chocolatey, brew, apt, snap )
+
+Codar = escrever para o computador ( Seguir regras, linguagem humana x maquina )
+
+Codigo = um codigo / Programa = junção de vários codigos
+
+Linguagem de Programação
+Input = entrada de dados               - ligar o computador
+Output = o que ele vai dar de volta    - ligar a tela
+
+Computador entende linguagem binaria 01010101
+
+Abstração
+Transformação do 010101 para linguagens
+
+Low-level = baixo nível
+Linguagem proxima da maquina - mais rapida ( mais dificil de escrever e de ler )
+Exemplo: Assembly
+
+High-level = linguagem de alto nivel
+Mais proxima da comunição humana
+if, Else, Function, Object, Class
+Leva mais tempo para a maquina traduzir e entender
+Compilar ou Interpretar
+Exemplo: JavaScript, Python, Rust..
+
+Sintaxe
+Conjunto de regras de escrita
+Cada linguagem tem as suas regras
+Simbolos: {} () ; = ++ --
+Palavras reservadas: if, else, while, for, var, let, const
+if = 
+
+Webpage = paginas na web
+Endereço universal URL
+Reposta dada pelo servidor HTML - CSS - JS
+
+Website
+Agrupamento de varios site
+Estático ou Dinâmico
+Estático = a pagina nao interage com o banco de dados
+Dinamico = interage com um banco de dados
+
+Web Application = Aplicação Web
+Um programa, um software que vive no servidor
+Envolve: Linguagens de Programação, Banco de Dados
+Muito mais complexo que uma pagina na web, mesmo que seja parecido
+Exemplo: Facebook, gmail, 
+Adaptação nos diversos dispositivos ( responsividade ) / Tablet, Mobile, PC
+Performance - precisa ser boa
+Acessibilidade - Visual, Auditive, SEO ( SEO Motores de busca que possam encontrar )
+
+Front-end vs Back-end 
+
+Front-end = Cliente ( Client-side )
+Browser
+Digita a URL e faz um pedido (request) para o servidor
+Usando tecnologia que se faz o pedido, como: HTML, CSS, Javascript, Imagens / Frameworkds e Bibliotecas
+
+Back-end
+Servidor (server-side)
+Recebe os pedidos do front-end
+ Entende e processa o pedido e devolve para o Front-end
+ Regras de negocio da aplicação
+Tecnologias
+ PHP, Java, Python, Javascript
+ Banco de Dados
+
+Aplicação WEB tradicional
+ Recarregar a pagina para ter conteudo atualizado
+ Front-end e o Back-end numa só aplicação
+ Servidor processa e devolve toda a pagina de uma só vez
+
+SPA
+ Single Page Application
+A sensação é de ter uma única página
+ Não precisa recarregar a página para ter o conteúdo atualizado
+ Front-end e Back-end são aplicações diferentes
+ Servidor responde a aplicação front-end
+Front-end feito com uso de Frameworks
+Back-end é no formato API
+
+HTML - CSS - JS - MANIPULAR A DOM - TERMINAL - NodeJS - SQL - Estrutura de Dados - Programação Orientada a Objetos - Programação Funcional - GIT & GITHub - APIs
+
+Versão Latest - LTS - Versão Estável
+
+HTML = Hypertext Markup Language
+Anatomia das Tags - Abertura ( <> ) - Fechamando de tag - Conteudo ( dentro das <> ) 
+-> Elementos constitui tudo
+
+Atributos - Elementos Vazios
+img - input -
+
+Atributos Booleanos = Verdadeiro ou Falso
+Não precisam de conteúdo
+
+Atributos Globais mais utilizados
+
+- class
+- contenteditable
+- data-*
+- hidden
+- id
+- style
+- tabindex
+- title
+
+<head> cabeça
+<body> corpo - conteudo - o que a pessoa vai ver
+
+<!-- Comentarios
+
+URL = Uniform Resource Locator
+https://www.google.com
+Sequencia de texto que define onde algo está localizado na web
+
+Caminhos dos arquivos
+Onde, no explorador de arquivos está localizado um recurso
+
+<a href="../hyperlinks.html">Buscar arquivos fora da pasta em que eu estou</a>
+
+<a href="./url-caminhos.html">Arquivos dentro da minha pasta</a>
+
+<a href="url-caminhos.html"Quando nao estou dentro de nenhuma pasta</a>
+
+<table>
+Prós
+- visualização de dados via linhas e colunas.
+- Boa acessibilidade para leitura dos dados
+
+Contras
+- Pouco flexivel
+- Precisa de estilização para melhor visualização
+
+Não usar para criar layouts
+
+
+<head> Toda parter que não é visivel no navegador
+Informações como title, links para css, links para favicon
+
+<meta> tag para colocar metadados para a pagina
+
+
+Favicon Básico
+<link rel="Icon" href="/icondadsadsadsa.png"/>
+
+<link rel="apple.com.br" href="https://fdsads.png">
+
+ABRIR OPÇÕES EMET
+! primeiro e depois - CTRL + ESPAÇO e selecionar !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

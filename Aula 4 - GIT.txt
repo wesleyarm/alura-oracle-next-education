@@ -1,0 +1,130 @@
+git config --local user.name "Seu nome aqui"
+git config --local user.email "seu@email.aqui"
+
+HEAD: Estado atual do nosso código, ou seja, onde o Git os colocou
+Working tree: Local onde os arquivos realmente estão sendo armazenados e editados
+index: Local onde o Git armazena o que será commitado, ou seja, o local entre a working tree e o repositório Git em si.
+
+-- itens que estao na pasta
+ls
+
+-- versao do git
+git --version
+
+-- iniciar um repositorio
+git init
+
+-- status do repositorio
+git status
+
+-- adicionando um arquivo em especifo
+git add nomedoarquivo.html
+
+-- adicionando todo o repositorio para salvar
+
+git add .
+
+-- limpar tudo
+clear
+
+-- check point - salvar o repositorio quefoi preparado - mensagem de commit
+git commit -m "Mensagem aqui do salvamento"
+
+
+-- para salvar e enviar para o git
+git push
+
+-- historio de modificações do projeto
+git log
+
+-- modificar informaçoes
+git config --local ( apenas o projeto em especifico )
+git config --global ( todo o computador )
+
+git config --local user.name "Wesley Alexandre"
+
+-- mostrar todas as informações resumidas
+git log--oneline
+
+-- ver as informações resumidas + alteraçoes
+git log -p
+
+-- help com mais informações
+git log --help
+
+sair da tela de scroll
+apertar q
+
+-- todos os comando listados
+https://devhints.io/git-log
+
+-- arquivos para fazer o git ignorar
+.gitignore   / arquivo que o git ignora
+colocar o nome dos arquivos ou pastas dentro do arquivo - .gitignore
+Procedimento para adicionar dai ao git o arquivo .gitignore // pode servir como exemplo para adicionar arquivos
+git add .gitignore
+git commit -m "Adicionando .gitignore"
+git log --oneline
+
+
+// Nunca gerar um commit com codigo nao funcionando //
+
+-- criando uma pasta
+mkdir servidor
+cd servidor
+-- criamos um repositório que não terá a working tree, ou seja, não conterá uma cópia dos nossos arquivos.
+-- Como o repositório servirá apenas como servidor, para que outros membros da equipe sincronizem seus trabalhos
+git init --bare
+-- lista os repositorios remotos que estao linkados naquele repositorio
+git remote
+-- adicionando dai
+git remote add local C:/Users. blablabla ( pode ser qualquer endereço, site, pasta do PC, etc )
+-- visualizar qual endereço está compartilhando os repositorios
+git remote -v
+
+cd .. ( voltar pasta )
+cd nomedapasta ( entrar em uma pasta )
+mkdir ( criar uma pasta )
+ls ( visualizar arquivos dentro da pasta )
+
+-- clonando uma pasta
+git clone /c/Users/blabla/ nomedapasta
+
+-- enviando as informações
+git push local master
+
+-- recebendo informações
+git pull nomedorepositorio master
+
+-- alterando nome do repositorio
+git remote rename origin local
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

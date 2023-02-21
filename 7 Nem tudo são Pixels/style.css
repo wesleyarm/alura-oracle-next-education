@@ -1,0 +1,26 @@
+
+/*
+Mudando o valor root
+:root {
+    font-size: 2rem;
+}
+
+html {
+    font-size: 3px;
+}
+*/
+
+div {
+    font-size: 18px;
+}
+
+/* Acessando o dado do root
+p {
+    font-size: 2rem;
+}
+*/
+
+p {
+    font-size: 2rem;
+}
+
