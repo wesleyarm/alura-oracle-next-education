@@ -41,7 +41,7 @@ Nesse repositório será guardado os conteúdos dos quais eu irei aprender no de
 ## :art: Lógica de Programação
 É o primeiro passo para aprender a programar. Essa trilha tem o objetivo de abrir a cabeça do estudante para a lógica e o mercado de desenvolvimento de software.
 
-## :#: Front-end
+## :computer: Front-end
 Ajuda a construir experiências fantásticas na web, se aprofundando nas linguagens <b>HTML, CSS e JavaScript</b>.
 
 ## :clipboard: Java
