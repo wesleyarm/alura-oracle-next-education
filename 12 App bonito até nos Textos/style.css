@@ -1,0 +1,24 @@
+p {
+
+
+    /*
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: initial;
+    font-size: 1em;
+
+    font-stretch: 50%;
+
+
+    letter-spacing: 1em;
+    word-spacing: 1em;
+    line-height: 10em;
+    text-transform: none;
+    text-decoration: underline solid red;
+    text-align: justify;
+    text-shadow: 1px 1px 1px red;
+    */
+
+/*     font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family*/
+    font: italic normal bold normal 3em/2 Helvetica, Arial, sans-serif;
+}

@@ -268,6 +268,650 @@ Exemplos,
 block: <p> <div> <section>, todos os headdings <h1> <h2>...
 inline <a> <strong> <span> <em>
 
+-----
+
+#margin
+Espaços entre os elementos
+
+-margin-top | margin-right | margin-bottom | margin-left 
+-values <length> | <percentage> | auto
+
+css
+div {
+	/* shorthand */
+margin: 12px 16px 10px 4px; ( cima - direita - baixo - esquerda )
+margin: 12px 16px 0; ( cima - laterais - baixo )
+margin: 8px 16px; ( cima e baixo - laterais )
+margin: 8px; ( todos os lados )
+}
+
+* cuidado com margin collapsing ( top se ajunta ao bottom )
+
+---
+
+#padding
+
+Preenchimento interno da caixa
+
+- padding-top | padding-right | padding-bottom | padding-left
+- values: <length> | <percentage> 
+
+css
+div {
+/ * shorthand */
+padding: 12px 16px 10px 4px;
+padding: 12px 16px 0;
+padding: 8px 16px;
+padding: 8px;
+}
+
+
+*padding poderá causar diferença na largura de um elemento
+
+----
+
+São as bordas da caixa
+
+Documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
+value: <border-style> | <border-width> | <border-color>
+
+style: solid | dotted | dashed | double | groove | ridge | inset | outset
+width: <length>
+color: <color>
+div {
+	/* shorthand */
+	border-top: solid 2px; /* top | right | bottom | left */
+
+	/* style */
+	border: solid;
+
+	/* width <length> | style */
+	border: 2px dotted;
+
+	/* style | color */
+	border: outset #f33;
+
+	/* width | style | color */
+	border: medium dashed green;
+
+}
+E o outline?
+O outline é muito semelhante ao border, mas difere em 4 sentidos:
+Não modifica o tamanho da caixa, pois não é parte do Box Model
+Poderá ser diferente de retangular
+Não permite ajuste individuais
+Mais usado pelo user agent para acessibilidade
+
+----
+
+
+Cores
+Usamos CSS para alterar cores do nosso documento.
+
+Tipos
+background-color (para caixas)
+color (para textos)
+border-color (para caixas)
+outros
+Valores
+Podemos definir valores por:
+
+-palavra-chave (blue, transparent)
+-hexadecimal (#990011) - 2 red, 2 green, 2 blue > rgb
+-funções: rgb, rgba, hsl, hsla
+
+css
+/*<hex-color> values 0-9 e A-F*/
+color: #090; /* RED, GREEN, BLUE */
+color: #009900;
+color: #090a;
+color:#009900aa;
+
+/*<rgb()> values */
+color: rgb(34, 12, 64, 0.6) /* 0-255 */
+color: rgba(34, 12, 64, 0.6)
+
+HSL → Hue - Saturation - Lightness
+color: hsl(180, 100%, 50%, 60%)
+color: hsla(180, 100%, 50%, 60%)
+
+/* Global values */
+color: inheritr; /* Herda a cor do elemento anterior */
+color: initial; /* Volta a sua cor inicial */
+color: unset; /* Pega a cor do contexto */
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+----
+
+Background
+Define um fundo para nosso elemento
+Sua área de atuação é a caixa toda
+Por padrão, é transparente
+
+Exemplos
+Usar cores solidas
+Usar imagens
+Controlar
+a posição das imagens
+se elas se repetem ou não
+o tamanho delas na caixa
+Usar cor e imagem juntas
+Usar cor gradiente
+
+--
+
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: repeat;
+background-repeat: space;
+background-repeat: round;
+background-repeat: no-repeat;
+
+/* Podedmos usar 2 valores: horizontal | vertical */
+background-repeat: repeat space;
+background-repeat: repeat repeat;
+background-repeat: round space;
+background-repeat: no-repeat round;
+
+/* Pricipais valores */
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+background-position: center;
+
+/* Values */
+background-size: cover;
+background-size: contain;
+
+/* Podemos usar 2 valores, o primeiro é para a largura da imagem e o segundo é para a altura */
+background-size: 40% auto;
+background-size: 2em 25%;
+background-size: auto 8px;
+background-size: auto auto;
+
+A propriedade background-origin é quem define o ponto de origem de uma imagem específica.
+/* Principais valores */
+background-origin: border-box;
+background-origin: padding-box;
+background-origin: content-box;
+O background-clip define se a cor ou imagem do background iniciam debaixo de sua área de borda, preenchimento ou conteúdo.
+/* Principais valores */
+background-clip: border-box;
+background-clip: padding-box;
+background-clip: content-box;
+background-clip: text;
+
+/* Principais valores */
+background-attachment: scroll;
+background-attachment: fixed;
+background-attachment: local;
+
+
+Podemos usar o shorthand background para definir todos os valores do background
+
+main {
+    color: white;
+    padding: 8px;
+    background-color: rgb(55, 50, 250);
+    background-image: url(https://ui-avatars.com/api/?size=128&background=5B4699&color=fff&name=Wesley%20Alexandre);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-attachment: fixed;
+
+    background: rgb(55, 50, 250) url(https://ui-avatars.com/api/?size=128&background=5B4699&color=fff&name=Wesley%20Alexandre) 
+    no-repeat right top / 50px content-box fixed;
+
+
+}
+
+----
+
+linear-gradient() é a função usada para criar gradient linear com o CSS.
+background: linear-gradient(45deg, red, yellow)
+radial-gradient() é a função usada para criar gradient circular.
+background: radial-gradient(green, red, yellow)
+background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2))
+
+Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem. Para isso basta separar por vírgula cada background.
+
+---
+
+Vídeos e Audio
+
+<video>
+-src
+controls
+- se não funcionar?
+fallback content
+
+-source
+src
+type
+
+-sobre serviços de terceiros
+
+---
+
+<iframe>
+- atributos
+src
+height
+width
+title < assebilidade>
+allowfullscreen
+frameborder
+
+
+<img>
+-src
+-alt
+-title
+-width
+-height
+-adicionando link
+
+---
+
+background-image
+- com a tag style
+- somente para estilo
+- nao é semântico e falta significado
+
+
+
+--
+
+Criando titulo visiveis para as imagens
+<figure> e <figcaption>
+
+---
+
+SVG
+É uma marcação, estilo html, mas não é para textos, e sim para fazer imagens.
+Possuimos elementos para gerar formas
+
+
+Para entender melhor
+-Imagem rasterizada x Imagem vetorizada
+
+Beneficios
+-Mais leve
+-Mais detalhada
+-mAIOR ACESSEBILIDADE E seo
+-Pode ser editada via CSS ou atributos
+
+Desvantagens
+- Pode ser mais complicada de trabalhar
+-Quanto mais complexa a imagem, mais trabalho para o navegador
+-Navegadores mais antigos não possuem suporte a essa tag
+
+Para fotografias, ainda prefira usar imagens rasterizadas
+
+--
+Page Lyouts
+-tables
+-Floats e clear
+-Frameworks e Grid Systems
+-Flexbox
+-Grid
+
+#Posicionamento
+Controlar onde, na página, o elemento irá ficar, alterando o fluxo normal dos elementos.
+
+-name: postion
+-Value: static/relative/absolute/fixed
+
+#Relative
+top, right, bottom, left, z-index
+
+#Absolute
+top, right, bottom, left, z-index
+
+#Fixed
+top, right, bottom, left, z-index
+
+#Element Stacking - z-index
+
+---
+
+#Flexbox
+-Nos permite posionar os elementos dentro da caixa.
+-Controle em uma dimensão (horizontal ou vertical)
+-Alinhamento, direcionamento, ordernar e tamanhos
+
+css
+div.parent {
+display: flex;
+}
+
+#flex-direction
+-Qual a direção do flex: horizontal ou vertical
+row | column
+
+#alinhamento
+-justify-content
+-align-items
+
+#Grid
+-Posionamento dos elementos dentro da caixa
+-Posicionamento horizontal e vertical ao mesmo tempo
+-pode ser flexivel ou fixo
+-Cria espaços para os elementos filhos habitarem
+
+---
+
+Trabalhando com fontes
+
+
+Tipografia transmite mensagem
+- negrito
+-tamanho
+-estilo
+
+#Basic Font Properties
+-font-family
+-font-weight
+-font-style
+-font-size
+
+#Font family
+Tipo de fonte de um elemento
+Lista de fontes e ordem de prioridade
+
+Inclui *fallback* font
+
+
+css
+p {
+	font-family: "Times New Roman", Times, serif;
+}
+
+----
+
+
+Font Weight
+Peso da fonte
+Valores: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+Dependendo da família da fonte não conseguimos utilizar todos os pesos de fonte
+p {
+	font-weight: bold;
+}
+Referência
+https://www.w3.org/TR/css-fonts-3/
+
+--
+
+Font Style
+É o estilo da fonte
+Valores: normal | italic | oblique
+Os valores que podem ser aplicados dependem da fonte usada
+span {
+	font-style: italic;
+}
+
+--
+
+
+Font Size
+Tamanho da fonte
+p {
+	font-size: 18px;
+}
+
+--
+
+Web Fonts
+Fontes do sistema x Fontes da web
+Fontes do sistema são as fontes que estão instaladas na máquina do usuário e nem sempre o cliente vai ter instalado as fontes usadas no projeto e isso pode fazer com que os estilos dos textos não sejam aplicados corretamente, mas para resolver esses casos podemos preparar nossas fonts para web ou usar fontes da web.
+
+Como usar fontes para web?
+@font-face
+@import
+link
+Referência
+https://fonts.google.com/ https://css-tricks.com/snippets/css/using-font-face-in-css/
+
+
+---
+
+ont-variant e font-stretch
+Descrição
+Font Variant
+Faz variações na apresentação da fonte
+p {
+	font-variant: small-caps;
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant
+
+Font Stretch
+Alargamento ou encolhimento da fonte
+Aceita palavras-chaves como: expanded, condensed, normal
+Aceita porcentagens de 50% a 200%
+Essa propriedade não vai funcionar em todas as fontes
+p {
+	font-stretch: expanded;
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch
+
+Referência
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+
+--
+
+Letter spacing
+Define o espaçamento entre os caracteres
+p {
+	letter-spacing: 4px;
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
+
+Word spacing
+Define o espaçamento entre palavras
+p {
+	word-spacing: 1em;
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing
+
+
+
+---
+
+Line height
+Define os espaços entre linhas
+Pode ser com unidades ou sem unidades de medida
+Valores comuns: 1.5 ou 2
+p {
+	line-height: 1.5;
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
+Text transform
+Transformação do texto
+Valores podem ser: none | capitalize | uppercase | lowercase | full-width | full-size-kana
+p {
+	text-transform: uppercase;
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+
+---
+
+Text decoration
+Aparência decorativa de um texto
+line: underline | overline | line-through
+podemos aplicar mais de 1 valor
+style: wavy | dotted | double | dashed | solid
+color: <color> values
+h1 {
+	text-decoration: underline; /* shorthand */
+}
+
+p {
+  text-decoration: wavy overline blue; /* shorthand */
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+
+
+---
+
+
+Text align
+Alinhamento de um texto
+Valores: start | end | left | right | center | justify | match-parent
+p {
+	text-align: center;
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+
+--
+
+Text shadow
+Sombra aplicada a um texto
+Permite múltiplos valores
+p {
+  text-shadow: 1px 1px 1px red,
+	       2px 2px 1px green; /* offset-x | offset-y | blur-radius | color */
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
+
+--
+
+Shorthand
+Descrição
+Podemos usar o shorthand font para determinar os seguintes valores: font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family
+p {
+  font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+}
+
+---
+
+Formulários
+
+
+Para que serve?
+-capturar dados de entrada (input)
+-interação
+-controle
+
+Pré requisitos
+-basico de html
+
+Dominar
+-estilização
+-validação
+-controles customizados
+-javascript
+
+--
+
+
+<form>
+-Elemento que definirá um formulário
+-é um container estilo <selection> <footer>
+
+
+Atributos básicos
+-action
+-method
+
+<fieldset>
+-agrupamento de campos
+-mesmo propósito
+-semântico
+-acessibilidade
+
+Atributos especiais
+-disabled
+desabilita todos os elementos internos
+não serão enviados ao submeter o formulário
+
+-form
+o id de um formulário ao qual esse fieldset pertence
+não precisa estar dentro do formulário
+
+-name
+nome do grupo
+
+<legend>
+nome do agrupamento
+primeiro elemento dentro do fieldset
+
+---
+
+
+<label>
+-associar e identificar uma (ou mais) tag de entrada de dados
+-acessibilidade
+-você poderá clicar para mudar o foco de entrada de dados
+
+Atributos
+-for
+	para fazer a conexão entre este label e a tag de entrada de dados
+	é feita via id do input
+	só funciona com elementos especificos
+		butto, input (not hidden), meter, output, progress, select, textarea
+
+
+
+--
+
+<button>
+Representa um botão
+Usado para enviar formulários
+É estilizado pelo user agent
+
+Atributos comuns
+type
+submit
+reset
+button
+autofocus
+disabled
+name
+value
+form
+
+---
+
+<datalist>
+Lista  de valores como sugestão a uma tag <input>
+-Valores sugestivos e não obrigatórios
+-usuarios poderão selecionar um dos valores, ou colocar um valor diferente da sugestão
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

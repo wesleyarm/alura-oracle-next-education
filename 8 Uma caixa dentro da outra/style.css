@@ -1,10 +1,10 @@
-div {
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-    margin: 10%;
-    padding: 0  20px;
+* { margin: 0;}
 
-    /* agora fazendo com que ele conte os 20px do padding dentro dos 100px do width */
-    box-sizing: border-box;
+div {
+    padding: 10px 2em 8px 50%;
+    border: 300px solid red;
+    border-top: dashed green 4px;
+    border-bottom: none;
+    
+    outline: yellow 4px solid;
 }

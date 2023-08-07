@@ -100,6 +100,24 @@ git pull nomedorepositorio master
 git remote rename origin local
 
 
+---------------------------------
+
+Exemplo real conectando repositório criado no github com a área de trabalho no PC
+
+…or create a new repository on the command line
+echo "# uninter-analise-e-desenvolvimento-de-sistemas" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/wesleyarm/uninter-analise-e-desenvolvimento-de-sistemas.git
+git push -u origin main
+
+
+----
+Mudar de master para main (branch)
+git branch -M main -> main seria o nome, pode colocar qualquer outro
+
 
 
 
